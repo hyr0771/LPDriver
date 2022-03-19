@@ -1,20 +1,12 @@
 # LPDriver
-A novel method for identifying personalized cancer driver genes through linear neighborhood propagation.
+LPDriver:A novel method for identifying personalized cancer driver genes through linear neighborhood propagation.
 
 
-(a) This package includes Matlab scripts and five datasets include BRCA,HNSC,LUAD,LUSC and PRAD for demo of LPDriver method.
+(1) This package includes the Matlab scripts of LPDriver and five cancer datasets including BRCA,HNSC,LUAD,LUSC and PRAD.
 
-(b) The input datasets include: DatasetsName_tumor.txt: the gene tumor expression data. 
+(2) The user can start LPDriver with main_LPDriver.m. The user can choose one of these five cancer datasets and specify the selected input dataset by setting the parameter “expression_tumor_fileName” in main_LPDriver.m. For example, we choose five patients’ tumor genetic expression data in BRCA as an example case and produce an example dataset 'Example_tumor.txt'. The user can specify expression_tumor_fileName = 'Example_tumor.txt' in main_LPDriver.m and run main_LPDriver.m to get a demo.
 
-(c) The output datasets include: The result (matrix) of detecting personalized driver genes by LPDriver; For LPDriver,The first row is the samples.The genes in each column are the predictive genes of the sample
+(3) The output is the resulting matrix of the predicted driver genes. In the resulting matrix, the first row is the name of patient samples and the genes in each column are the predicted driver genes for the patient sample.
 
-(d) LPDriver was written and tested on Matlab with version "R2019a".
+(4) LPDriver was written and tested on Matlab with version "R2019a".
 
-(e) Usage: 
-Step 1. Download files and directories from the repository " LPDriver ".
-Step 2. Set expression_tumor_fileName = ' DatasetsName _tumor.txt' in  " main_LPDriver.m" .
-Step 3. Run main_LPDriver.m.
-
-(f) We choose 5 patients data in BRCA as a example case in our demo so you can implement LPDriver quickly. 
-
-(g) Note that LPDriver requires a good amount of RAM.
